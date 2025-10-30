@@ -16,4 +16,4 @@
 
 useratIP=$1
 destination_path=$2
-scp $useratIP:/opt/outline/persisted-state/shadowbox_config.json $destination_path
+sudo scp $useratIP:/opt/outline/persisted-state/shadowbox_config.json $destination_path

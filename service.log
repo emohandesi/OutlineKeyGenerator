@@ -1,0 +1,18 @@
+nohup: ignoring input
+Starting User Counter Service on 127.0.0.1:5001
+Database: user_tracking.db
+Available endpoints:
+  POST /health - Health check with user tracking
+  POST /keepalive - Alternative keepalive endpoint
+  GET /stats - Get user statistics
+  POST /cleanup - Clean up old data
+ * Serving Flask app 'user_counter_service'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [29/Oct/2025 22:15:20] "POST /health HTTP/1.1" 200 -
+127.0.0.1 - - [29/Oct/2025 22:15:35] "POST /health HTTP/1.1" 200 -
+127.0.0.1 - - [29/Oct/2025 22:15:40] "POST /health HTTP/1.1" 200 -
+127.0.0.1 - - [29/Oct/2025 22:15:47] "GET /stats HTTP/1.1" 200 -
+127.0.0.1 - - [29/Oct/2025 22:15:59] "POST /keepalive HTTP/1.1" 200 -
