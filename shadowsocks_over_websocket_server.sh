@@ -300,6 +300,7 @@ print_success "Access key created at /var/www/html/ws"
 # Step 10: Configure firewall
 print_info "Step 10: Configuring firewall..."
 if command -v ufw &> /dev/null; then
+    sudo ufw allow 22/tcp
     sudo ufw allow 80,443/tcp
     sudo ufw --force enable
     print_success "UFW firewall configured"
